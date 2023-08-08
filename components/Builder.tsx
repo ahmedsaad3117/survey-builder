@@ -1,6 +1,6 @@
 "use client";
 
-import { jsonBuilder } from "@/helper/json-builder";
+import { JsonBuilder } from "@/helper/json-builder";
 import React, { useRef, useState } from "react";
 
 // should be store for this componnet and a globel store for the whole page
@@ -11,9 +11,9 @@ const Builder = () => {
 
   const buildJson = () => {
     // @ts-ignore
-    const json = jsonBuilder(questionRef?.current);
+    const json = new JsonBuilder(questionRef?.current);
     // @ts-ignore
-    console.log(json);
+    console.log(json)
     return json;
   };
 
@@ -34,16 +34,7 @@ const Builder = () => {
           style={{backgroundColor: inputMetaData.backgroundColor} }
           alt={inputMetaData.alt}
         />
-        {/* 
-            question: {
-                id: 79,
-                suravey_id: 32,
-                type: "INPUT"
-                meta_key: ["type"],
-                meta_value: ["text"]
-            } 
-        
-        */}
+
         {/* @ts-ignore */}
         <button onClick={buildJson}>Generate JSON</button>
       </div>
