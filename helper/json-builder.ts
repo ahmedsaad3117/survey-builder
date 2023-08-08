@@ -1,6 +1,5 @@
 import { Question } from "@/types/question-type";
 
-
 export class JsonBuilder implements Question {
     id?: string;
     suravey_id?: string;
@@ -16,3 +15,6 @@ export class JsonBuilder implements Question {
         this.meta_value_attr = element.getAttributeNames().map((attrKey) => element.getAttribute(attrKey)) as string[]
     }
 }
+
+// page ---> 
+// 
