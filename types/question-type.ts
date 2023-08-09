@@ -3,10 +3,9 @@ export interface Question {
     suravey_id?: string;
     page_id: string
     creator_id: string
-    tag: string;
     content: string;
-    description: string;
-    questionType: QuestionEnum
+    description?: string;
+    question_type: QuestionEnum
     web_type: WebEnum
     answer_type: AnswerEnum
     answers: Answer[]
@@ -14,22 +13,22 @@ export interface Question {
     // meta_value_attr: string[]; //xxxx
 }
 
-interface Answer {
+export interface Answer {
     id: string
     type: string
     next_survay_point_id: string
 }
 
-enum QuestionEnum {
+export enum QuestionEnum {
     CSAT,
     NPS,
     TEXT
 }
 
-enum WebEnum {
+export enum WebEnum {
 
 }
 
-enum AnswerEnum {
+export enum AnswerEnum {
 
 }
