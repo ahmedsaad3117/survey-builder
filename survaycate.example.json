@@ -1,0 +1,296 @@
+{
+    "id": "badfedab51fc3f32",
+    "activated": true,
+    "name": "Collect comprehensive feedback on your newsletter",
+    "type": "PageSurvey",
+    "points": [
+        {
+            "settings": {
+                "logic": [],
+                "text_on_the_left": "Poor",
+                "text_on_the_right": "Excellent",
+                "mandatory_submit_button": false
+            },
+            "id": 2078305,
+            "type": "SurveyQuestion",
+            "answer_type": "smiley_scale",
+            "content": "How would you rate the content of our newsletter?",
+            "description": "Hi! We'd love to hear your input!",
+            "max_path": 5,
+            "answers": [
+                {
+                    "id": 5692061,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Extremely unsatisfied"
+                },
+                {
+                    "id": 5692057,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Unsatisfied"
+                },
+                {
+                    "id": 5692058,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Neutral"
+                },
+                {
+                    "id": 5692059,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Happy"
+                },
+                {
+                    "id": 5692060,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": 2078307,
+                    "possible_answer": "Extremely happy"
+                }
+            ]
+        },
+        {
+            "settings": {
+                "logic": [],
+                "mandatory": false,
+                "user_tag": "",
+                "next_survey_point_id": null
+            },
+            "id": 2078306,
+            "type": "SurveyQuestion",
+            "answer_type": "text",
+            "content": "What can we do to make it more interesting?",
+            "description": "",
+            "max_path": 4,
+            "answers": [
+                {
+                    "id": 5692062,
+                    "type": null,
+                    "user_tag": null,
+                    "next_survey_point_id": null
+                }
+            ]
+        },
+        {
+            "settings": {
+                "logic": [],
+                "randomize_answers": false,
+                "randomize_except_last": false,
+                "next_survey_point_id": null,
+                "choice": {
+                    "min": 1,
+                    "max": 0,
+                    "text": ""
+                },
+                "mandatory_comment": true
+            },
+            "id": 2078307,
+            "type": "SurveyQuestion",
+            "answer_type": "multiple",
+            "content": "Which of the topics do you find most interesting?",
+            "description": "Choose all that apply.",
+            "max_path": 3,
+            "answers": [
+                {
+                    "id": 5692063,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Topic 1",
+                    "add_comment": false
+                },
+                {
+                    "id": 5692064,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Topic 2",
+                    "add_comment": false
+                },
+                {
+                    "id": 5692065,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Topic 3",
+                    "add_comment": false
+                },
+                {
+                    "id": 5692067,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Topic 4",
+                    "add_comment": false
+                },
+                {
+                    "id": 5692066,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Other",
+                    "add_comment": true
+                }
+            ]
+        },
+        {
+            "settings": {
+                "logic": [],
+                "mandatory": false,
+                "randomize_answers": false,
+                "randomize_except_last": false
+            },
+            "id": 2078308,
+            "type": "SurveyQuestion",
+            "answer_type": "dropdown_list",
+            "content": "How happy are you with its frequency?",
+            "description": "",
+            "max_path": 2,
+            "answers": [
+                {
+                    "id": 5692068,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "You send it frequently enough."
+                },
+                {
+                    "id": 5692069,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "You send it too often."
+                },
+                {
+                    "id": 5692070,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "I wish I could receive it more often."
+                }
+            ]
+        },
+        {
+            "settings": {
+                "logic": [],
+                "randomize_answers": false,
+                "randomize_except_last": false,
+                "mandatory_submit_button": false,
+                "mandatory_comment": true
+            },
+            "id": 2078309,
+            "type": "SurveyQuestion",
+            "answer_type": "single",
+            "content": "How often would you like to receive it?",
+            "description": "",
+            "max_path": 1,
+            "answers": [
+                {
+                    "id": 5692071,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Once a week",
+                    "add_comment": false
+                },
+                {
+                    "id": 5692072,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Every two weeks",
+                    "add_comment": false
+                },
+                {
+                    "id": 5692073,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Once a month",
+                    "add_comment": false
+                },
+                {
+                    "id": 5692074,
+                    "type": null,
+                    "user_tag": "",
+                    "next_survey_point_id": null,
+                    "possible_answer": "Other",
+                    "add_comment": true
+                }
+            ]
+        },
+        {
+            "settings": {
+                "logic": [],
+                "mandatory": true,
+                "user_tag": "",
+                "next_survey_point_id": -1
+            },
+            "id": 2078310,
+            "type": "SurveyQuestion",
+            "answer_type": "text",
+            "content": "Is there anything else you'd like to add?",
+            "description": "",
+            "max_path": 0,
+            "answers": [
+                {
+                    "id": 5692075,
+                    "type": null,
+                    "user_tag": null,
+                    "next_survey_point_id": null
+                }
+            ]
+        }
+    ],
+    "project_id": 910860,
+    "integrations": {},
+    "theme_id": 112243,
+    "global_tags": null,
+    "global_close_tags": "",
+    "settings": {
+        "has_responses": true,
+        "embedded_question_confirmation": true,
+        "survey_language": "",
+        "header_logo": "",
+        "kiosk_enabled": true,
+        "kiosk_refresh_enabled": true,
+        "navigation_enabled": false,
+        "launch": {
+            "start_at": null,
+            "end_at": null,
+            "responses_limit": null
+        },
+        "link_preview": {
+            "title": null,
+            "description": null,
+            "is_screenshot": null,
+            "screenshot_uid": null,
+            "image_url": null
+        },
+        "messages": {
+            "disabled_text": "This survey is currently unavailable",
+            "engaged_text": "You've already responded to this survey",
+            "submit_text": "Submit",
+            "thankyou_text": "Thank you for taking part in our survey",
+            "text_placeholder": "Type your answer here...",
+            "dropdown_placeholder": "Type or select an option",
+            "progress_bar_text": "survey completed",
+            "answer_required_text": "Answer required"
+        },
+        "provider": "",
+        "show_progress_bar": false,
+        "email_snippet": {
+            "header_logo": "",
+            "main_color": "#29292a",
+            "buttons_style": "RoundedCorners"
+        },
+        "hide_footer": false,
+        "languages": null
+    }
+}

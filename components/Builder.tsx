@@ -4,6 +4,8 @@ import { JsonBuilder } from "@/helper/json-builder";
 import React, { useRef, useState } from "react";
 
 // should be store for this componnet and a globel store for the whole page
+// My next step will be create the store to save object that contain all question or not nesseray? becouse we already have each quesant the survay that 
+// and with each quesion we should send request to save this qeustin of save it in the goble store and then saave at the end once 
 
 const Builder = () => {
   const [inputMetaData, setInputMetaData] = useState<any>({}); // should be type of the input props
