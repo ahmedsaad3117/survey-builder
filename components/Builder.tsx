@@ -14,12 +14,13 @@ const Builder = () => {
 
   useEffect(() => {
     // Fetch the survey data from the JSON file
-    fetch('path_to_json_file')
+    fetch('./survey.json')
       .then(response => response.json())
       .then(data => {
         setQuestions(data.questions);
         setAnswers(data.answers);
-      });
+      })
+      .catch(error => console.error('Error:', error));
   }, []);
 
   const buildJson = () => {
