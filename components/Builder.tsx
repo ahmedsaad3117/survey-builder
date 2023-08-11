@@ -8,8 +8,19 @@ import React, { useRef, useState } from "react";
 // and with each quesion we should send request to save this qeustin of save it in the goble store and then saave at the end once 
 
 const Builder = () => {
-  const [inputMetaData, setInputMetaData] = useState<any>({}); // should be type of the input props
+  const [questions, setQuestions] = useState<any[]>([]); // should be type of the question props
+  const [answers, setAnswers] = useState<any[]>([]); // should be type of the answer props
   const questionRef = useRef(null);
+
+  useEffect(() => {
+    // Fetch the survey data from the JSON file
+    fetch('path_to_json_file')
+      .then(response => response.json())
+      .then(data => {
+        setQuestions(data.questions);
+        setAnswers(data.answers);
+      });
+  }, []);
 
   const buildJson = () => {
     // @ts-ignore
@@ -29,13 +40,26 @@ const Builder = () => {
         </ul>
       </div>
       <div>
-        <input
-          ref={questionRef}
-          type="text"
-          placeholder={inputMetaData.placeHolder}
-          style={{backgroundColor: inputMetaData.backgroundColor} }
-          alt={inputMetaData.alt}
-        />
+        {questions.map((question, index) => (
+          <div key={index}>
+            <input
+              ref={questionRef}
+              type="text"
+              value={question}
+              onChange={event => {
+                const newQuestions = [...questions];
+                newQuestions[index] = event.target.value;
+                setQuestions(newQuestions);
+              }}
+            />
+            <button onClick={() => {
+              const newQuestions = [...questions];
+              newQuestions.splice(index, 1);
+              setQuestions(newQuestions);
+            }}>Remove Question</button>
+          </div>
+        ))}
+        <button onClick={() => setQuestions([...questions, ''])}>Add Question</button>
 
         {/* @ts-ignore */}
         <button onClick={buildJson}>Generate JSON</button>
