@@ -28,9 +28,11 @@ const Builder = () => {
           <li onClick={()=>setInputMetaData({...inputMetaData,backgroundColor : "Black"})}>Black</li>
         </ul>
       </div>
-      <div>
-        <input
-          ref={questionRef}
+      <div ref={questionRef}>
+          do you like it ?
+      </div>
+      <div >
+        <input  
           type="text"
           placeholder={inputMetaData.placeHolder}
           style={{backgroundColor: inputMetaData.backgroundColor} }
