@@ -1,6 +1,6 @@
-import { Answer, AnswerEnum, Question, QuestionEnum, WebEnum } from "@/types/question-type";
+import { IAnswer, AnswerEnum, IQuestion, QuestionEnum, WebEnum } from "@/types/question-type";
 
-export class JsonBuilder implements Question {
+export class JsonBuilder implements IQuestion {
     id?: string;
     suravey_id?: string;
     page_id: string
@@ -10,9 +10,9 @@ export class JsonBuilder implements Question {
     question_type!: QuestionEnum
     web_type: WebEnum
     answer_type: AnswerEnum
-    answers: Answer[]
+    answers: IAnswer[]
 
-    constructor(element: HTMLElement, question_type: QuestionEnum, web_type: WebEnum, answer_type: AnswerEnum, answers: Answer[]) {
+    constructor(element: HTMLElement, question_type: QuestionEnum, web_type: WebEnum, answer_type: AnswerEnum, answers: IAnswer[]) {
         this.id = Math.floor(Math.random() * 10).toString()
         this.suravey_id = Math.floor(Math.random() * 10).toString()
         this.page_id = Math.floor(Math.random() * 10).toString()
@@ -23,6 +23,9 @@ export class JsonBuilder implements Question {
         this.web_type = web_type
         this.answer_type = answer_type
         this.answers = answers
+        // renderComponent(){
+            //  render compnent depend of it type 
+        // }
 
         // this.meta_key_attr = element.getAttributeNames()
         // this.meta_value_attr = element.getAttributeNames().map((attrKey) => element.getAttribute(attrKey)) as string[]

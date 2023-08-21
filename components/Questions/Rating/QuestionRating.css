@@ -1,0 +1,22 @@
+.hover-here:hover {
+  color: red;
+}
+.hover-here {
+  margin: 16px;
+}
+
+.rate-type-blue:hover {
+  color: blue;
+}
+
+.rate-type-red:hover {
+  color: red;
+}
+
+.rating_bar {
+  display: flex;
+}
+
+.rating_bar div {
+  margin: 3px;
+}
